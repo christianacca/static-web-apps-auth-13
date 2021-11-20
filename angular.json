@@ -1,4 +1,7 @@
 {
-  "version": 1,
-  "projects": {}
+  "version": 2,
+  "projects": {
+    "angular-swa-auth-demo": "apps/angular-swa-auth-demo",
+    "angular-swa-auth-demo-e2e": "apps/angular-swa-auth-demo-e2e"
+  }
 }
