@@ -1,0 +1,48 @@
+{
+  "projectType": "library",
+  "root": "libs/public/angular-swa-auth",
+  "sourceRoot": "libs/public/angular-swa-auth/src",
+  "prefix": "swa",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/public/angular-swa-auth"],
+      "options": {
+        "project": "libs/public/angular-swa-auth/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/public/angular-swa-auth/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/public/angular-swa-auth/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/public/angular-swa-auth"],
+      "options": {
+        "jestConfig": "libs/public/angular-swa-auth/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/public/angular-swa-auth/src/**/*.ts",
+          "libs/public/angular-swa-auth/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "scope:public",
+    "type:util",
+    "framework:angular",
+    "status=published",
+    "bundle:main"
+  ]
+}

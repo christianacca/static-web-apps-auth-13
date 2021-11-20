@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "angular-swa-auth-demo": "apps/angular-swa-auth-demo",
-    "angular-swa-auth-demo-e2e": "apps/angular-swa-auth-demo-e2e"
+    "angular-swa-auth-demo-e2e": "apps/angular-swa-auth-demo-e2e",
+    "public-angular-swa-auth": "libs/public/angular-swa-auth"
   }
 }

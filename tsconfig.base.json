@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@christianacca/angular-swa-auth": [
+        "libs/public/angular-swa-auth/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
